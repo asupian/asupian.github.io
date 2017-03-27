@@ -30,6 +30,7 @@ color:
   secondary: 808080
   maintext: 808080
   maintextlite: b2b2b2
+  maintextaccent: 3b9886
 
 # Footer settings
 footer:

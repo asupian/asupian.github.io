@@ -21,7 +21,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #{{ site.color.primary }};
+    color: #{{ site.color.maintext }};
 }
 
 h1,
@@ -68,11 +68,12 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #{{ site.color.maintext }};
+    height: 100%;
 }
 
 header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    height: 100vh;
+    margin: auto 10px;
 }
 
 header img {
@@ -83,18 +84,27 @@ header img {
 header .intro-text .name {
     display: block;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 4em;
+    font-size: 2.75em;
+    color: #{{ site.color.maintextaccent }};
+    margin-bottom: 20px;
 }
 
 header .intro-text .skills {
-    font-size: 1em;
-    font-weight: 200;
+    font-size: 1.2em;
+}
+
+header #linkdiv {
+    font-size: 1.2em;
+    margin-top: 60px;
+}
+
+header .quicklink {
+    text-decoration: underline;
 }
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
+        margin: auto auto;
     }
 
     header .intro-text .name {
@@ -105,61 +115,11 @@ header .intro-text .skills {
         font-size: 1.5em;
         font-weight: 200;
     }
+    header #linkdiv {
+        font-size: 1.5em;
+        margin-top: 100px;
+    }
 }
-
-.navbar-default .navbar-nav>li>a {
-    color: #{{ site.color.maintext }};
-    background: #{{ site.color.primary }};
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-.navbar-default {
-    color: #{{ site.color.maintext }};
-    background: #{{ site.color.primary }};
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
-    color: #{{ site.color.maintext }};
-}
-
-.navbar-default .navbar-nav>li>a:hover{
-    border-bottom: 1px solid
-}
-
-
-.navbar a:focus {
-    outline: 0;
-}
-
-.navbar .navbar-nav {
-    letter-spacing: 1px;
-}
-
-.navbar .navbar-nav li a:focus {
-    outline: 0;
-}
-
-.navbar-default,
-.navbar-inverse {
-    border: 0;
-}
-
-/*Hamburger menu for mobile*/
-.navbar-default .navbar-toggle,
-.navbar-default .navbar-toggle:focus,
-.btn,
-.btn:focus {
-    border-color: #{{ site.color.maintextlite }};
-    background: #{{ site.color.maintextlite }};
-}
-
-.navbar-default .navbar-toggle:hover,
-.btn:hover {
-    border-color: #{{ site.color.maintext }};
-    background: #{{ site.color.maintext }};
-}
-
 
 section {
     padding: 100px 0;

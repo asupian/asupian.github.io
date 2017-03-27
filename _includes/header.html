@@ -1,21 +1,24 @@
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="intro-text">
-                    <span class="name">andry supian</span>
-                    <span class="skills">Technical Product Manager @Graphiq.</span><br>
-                    <span class="skills">Passionate about user-driven, data-verified design.</span>
-                </div>
+<!-- Header -->
+<header>
+    <div class="container Aligner">
+        <div class="Aligner-item">
+            <div class="intro-text">
+                <span class="name">andry supian</span>
+                <span class="skills">Technical Product Manager @ Graphiq.</span><br>
+                <span class="skills">Passionate about user-driven, data-verified design.</span>
             </div>
-            <div class="row">
-                <ul class="list-inline">
-                    {% for network in site.social %}
-                    <li>
-                        <a href="{{ network.url }}" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
-                    </li>
-                    {% endfor %}
-                </ul>
+            <ul class="list-inline">
+                {% for network in site.social %}
+                <li>
+                    <a href="{{ network.url }}" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
+                </li>
+                {% endfor %}
+            </ul>
+            <div id="linkdiv">
+                <a href="#projects" class="page-scroll quicklink">projects</a>
+                <span> | </span>
+                <a href="#about" class="page-scroll quicklink">about</a>
             </div>
         </div>
-    </header>
+    </div>
+</header>
