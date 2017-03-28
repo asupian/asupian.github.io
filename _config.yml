@@ -27,9 +27,8 @@ contact: static
 color:
   primary: fff
   primary-rgb: "112,123,123"
-  secondary: 808080
+  secondary: f3f3f3
   maintext: 808080
-  maintextlite: b2b2b2
   maintextaccent: 3b9886
 
 # Footer settings
